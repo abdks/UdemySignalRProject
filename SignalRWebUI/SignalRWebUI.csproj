@@ -6,4 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-notify\" />
+    <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-toggle\" />
+    <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\chartist\plugin\" />
+    <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-scrollbar\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
 </Project>
