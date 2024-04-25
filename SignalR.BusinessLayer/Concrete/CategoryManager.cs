@@ -20,8 +20,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public int TActiveCategoryCount()
         {
-            //return _categoryDal.ActiveCategoryCount();
-            throw new NotImplementedException();
+            return _categoryDal.ActiveCategoryCount();
         }
 
         public void TAdd(Category entity)
@@ -31,8 +30,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public int TCategoryCount()
         {
-            //return _categoryDal.CategoryCount();
-            throw new NotImplementedException();
+            return _categoryDal.CategoryCount();
         }
 
         public void TDelete(Category entity)
@@ -52,8 +50,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public int TPassiveCategoryCount()
         {
-            //return _categoryDal.PassiveCategoryCount();
-            throw new NotImplementedException();
+           return _categoryDal.PassiveCategoryCount();
         }
 
         public void TUpdate(Category entity)

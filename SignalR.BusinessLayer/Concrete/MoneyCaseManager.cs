@@ -40,9 +40,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public decimal TTotalMoneyCaseAmount()
         {
-            //return _moneyCaseDal.TotalMoneyCaseAmount();
-            throw new NotImplementedException();
-
+            return _moneyCaseDal.TotalMoneyCaseAmount();
         }
 
         public void TUpdate(MoneyCase entity)

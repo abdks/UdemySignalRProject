@@ -1,6 +1,5 @@
 ﻿using SignalR.BusinessLayer.Abstract;
 using SignalR.DataAccessLayer.Abstract;
-using SignalR.EntityLayer.Entities;
 using SignalR.EntiyLayer.Entities;
 using System;
 using System.Collections.Generic;
@@ -21,12 +20,12 @@ namespace SignalR.BusinessLayer.Concrete
 
         public string TProductNameByMaxPrice()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductNameByMaxPrice();
         }
 
         public string TProductNameByMinPrice()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductNameByMinPrice();
         }
 
         public void TAdd(Product entity)
@@ -51,37 +50,37 @@ namespace SignalR.BusinessLayer.Concrete
 
         public List<Product> TGetProductsWithCategories()
         {
-           return _productDal.GetProductsWithCategories();
+            return _productDal.GetProductsWithCategories();
         }
 
         public int TProductCount()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductCount();
         }
 
         public int TProductCountByCategoryNameDrink()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductCountByCategoryNameDrink();
         }
 
         public int TProductCountByCategoryNameHamburger()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductCountByCategoryNameHamburger();
         }
 
         public decimal TProductPriceAvg()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductPriceAvg();
         }
 
         public void TUpdate(Product entity)
         {
-           _productDal.Update(entity);
+            _productDal.Update(entity);
         }
 
         public decimal TProductAvgPriceByHamburger()
         {
-            throw new NotImplementedException();
+            return _productDal.ProductAvgPriceByHamburger();
         }
     }
 }

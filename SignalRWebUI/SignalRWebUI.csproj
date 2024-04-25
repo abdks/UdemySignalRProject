@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Dtos\" />
     <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-notify\" />
     <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-toggle\" />
     <Folder Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\chartist\plugin\" />
