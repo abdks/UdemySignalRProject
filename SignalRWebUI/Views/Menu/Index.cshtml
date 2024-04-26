@@ -125,7 +125,10 @@
 
     @await Component.InvokeAsync("_UILayoutScriptComponentPartial")
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
+        // Ajax işlemleri
         function showproductid(value) {
             var id = value;
             $.ajax({
@@ -135,14 +138,19 @@
                 contentType: 'json',
                 success: function () {
                     swal("Seçilen Ürün ID:" + id, "Seçtiğiniz Ürün Sepete Eklendi!", "success");
-
                 }
             });
         };
-
-
     </script>
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- SignalR Scriptleri -->
+    <!-- SignalR için gerekli scriptleri buraya ekleyin -->
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+
 </body>
 
 </html>
