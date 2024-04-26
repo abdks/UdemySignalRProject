@@ -9,6 +9,7 @@ namespace SignalRApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class AboutController : ControllerBase
     {
         private readonly IAboutService _aboutService;
