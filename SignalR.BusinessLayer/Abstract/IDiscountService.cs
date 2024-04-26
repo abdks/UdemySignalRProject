@@ -1,5 +1,4 @@
-﻿using SignalR.EntityLayer.Entities;
-using SignalR.EntiyLayer.Entities;
+﻿using SignalR.EntiyLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +9,8 @@ namespace SignalR.BusinessLayer.Abstract
 {
     public interface IDiscountService : IGenericService<Discount>
     {
+        void TChangeStatusToTrue(int id);
+        void TChangeStatusToFalse(int id);
+        List<Discount> TGetListByStatusTrue();
     }
 }
