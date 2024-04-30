@@ -118,5 +118,6 @@ namespace SignalRApi.Hubs
             await Clients.All.SendAsync("ReceiveClientCount", clientCount);
             await base.OnDisconnectedAsync(exception);
         }
+
     }
 }
